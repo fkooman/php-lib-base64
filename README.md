@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/fkooman/php-base64.svg)](https://travis-ci.org/fkooman/php-base64)
+
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fkooman/php-base64/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fkooman/php-base64/?branch=master)
 
 # Introduction
