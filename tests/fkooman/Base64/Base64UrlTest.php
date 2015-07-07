@@ -46,6 +46,14 @@ class Base64UrlTest extends PHPUnit_Framework_TestCase
         $this->assertSame('!', Base64Url::decode('IQ'));
     }
 
+    public function testEncodeWithPlusAndSlash()
+    {
+        // plus is replaced by dash
+        $this->assertSame('PD94bWwgdmVyc2lvbj0iMS4wIj8-', Base64Url::encode('<?xml version="1.0"?>'));
+        // slash replaces by underscore
+        $this->assertSame('c3ViamVjdHM_X2Q9MQ', Base64Url::encode('subjects?_d=1'));
+    }
+
     /**
      * @expectedException InvalidArgumentException
      * @expectedExceptionMessage invalid base64url string length
