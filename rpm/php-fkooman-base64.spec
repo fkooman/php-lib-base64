@@ -5,7 +5,7 @@
 %global github_name      php-base64
 
 Name:       php-%{composer_vendor}-%{composer_project}
-Version:    1.0.0
+Version:    1.0.1
 Release:    1%{?dist}
 Summary:    A base64 encoder and decoder
 
@@ -41,5 +41,8 @@ cp -pr src/* ${RPM_BUILD_ROOT}%{_datadir}/php
 %license COPYING
 
 %changelog
+* Mon Jul 13 2015 François Kooman <fkooman@tuxed.net> - 1.0.1-1
+- update to 1.0.1
+
 * Tue Jul 07 2015 François Kooman <fkooman@tuxed.net> - 1.0.0-1
 - initial package
