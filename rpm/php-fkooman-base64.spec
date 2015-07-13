@@ -18,6 +18,8 @@ BuildArch:  noarch
 Provides:   php-composer(%{composer_vendor}/%{composer_project}) = %{version}
 
 Requires:   php(language) >= 5.3.0
+Requires:   php-spl
+Requires:   php-standard
 
 %description
 A library to encode and decode base64 and base64url.

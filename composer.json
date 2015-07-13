@@ -13,5 +13,8 @@
     "description": "A base64 encoder and decoder",
     "license": "Apache-2.0",
     "name": "fkooman/base64",
-    "require": {}
+    "require": {
+        "ext-spl": "*",
+        "php": ">5.3.3"
+    }
 }
